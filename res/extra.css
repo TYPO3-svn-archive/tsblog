@@ -1,0 +1,141 @@
+.typo3-editPanel-controls {
+	background-color: transparent;
+}
+
+ul.category-menu,
+ul.months-menu,
+#random-blogposts {
+	margin: 0 0 0 30px;
+	padding: 0;
+}
+
+	#random-blogposts div.blogpost {
+		border: none;
+		margin-bottom: 0px;
+	}
+	
+	#random-blogposts h2.posttitle {
+		font-size: 1em;
+		font-weight: normal;
+		padding: 0;
+		margin: 0;
+	}
+	
+.blogpost {
+	margin-bottom: 30px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #CDDFEF;
+}
+
+.months-menu li,
+.category-menu li {
+	list-style-type: none;
+}
+
+span.count {
+	color: #aaa;
+}
+
+li.year {
+	font-weight: bold;
+}
+
+li.month {
+	padding-left: 20px;
+}
+
+.web20date img {
+	float: left;
+	margin: 0 10px 10px 0;
+}
+
+.comment-info,
+.category-info {
+	margin-right: 5px;
+	font-size: 0.8em;
+}
+
+.comment-info,
+.category-info,
+.comment-info a,
+.category-info a {
+	color: #777;
+}
+
+.category-info {
+	float: left;
+}
+
+.gravatar-image {
+	float: left;
+	margin-right: 5px;
+}
+
+.comment-body {
+	font-size: small;
+	padding: 10px 10px 10px 110px;
+}
+
+.comment-header {
+	display: block;
+	background-color: #F3F7FB;
+	border-bottom: 1px solid #CDDFEF;
+	padding: 10px 10px 10px 110px;
+}
+
+.comment-header,
+.comment-header a {
+	color: #000;
+	font-weight: bold;
+}
+
+.comment-date {
+	font-size: small;
+	color: #aaa;
+}
+
+.comment {
+	overflow: hidden;
+	padding: 1px;
+	background-color: white;
+	border: 1px solid #CDDFEF;
+	margin-bottom: 5px;
+}
+
+.tx-comments-comment-form label {
+	text-align: right;
+	padding-right: 5px;
+}
+
+.tx-comments-comment-form h4,
+.tx-comments-comment-form p {
+	display: none;
+}
+
+
+
+/**
+  * @section tx-indexedsearch-res
+  */
+
+.tx-indexedsearch-res .tx-indexedsearch-res {
+    border-top: 1px solid #ccc;
+    padding-top: 1em;
+}
+
+.tx-indexedsearch-res h3 span {
+    margin-right: .5em;
+}
+
+.tx-indexedsearch-info * {
+    display: inline;
+    margin: 0;
+}
+
+.tx-indexedsearch-info dt, .tx-indexedsearch-info dd {
+    font-size: .917em; /* 11px */
+}
+
+.tx-indexedsearch-info dd {
+    margin-right: 1em;
+}

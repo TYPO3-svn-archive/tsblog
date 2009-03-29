@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'tsblog'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_tsblog_categories">Categories</label>
+			<label index="tx_tsblog_categories.title">Title</label>
+			<label index="tx_tsblog_posts">Posts</label>
+			<label index="tx_tsblog_posts.title">Title</label>
+			<label index="tx_tsblog_posts.image">Image</label>
+			<label index="tx_tsblog_posts.body">Body</label>
+			<label index="tx_tsblog_posts.categories">Categories</label>
+			<label index="tx_tsblog_posts.postdate">Post date</label>
+		</languageKey>
+	</data>
+</T3locallang>

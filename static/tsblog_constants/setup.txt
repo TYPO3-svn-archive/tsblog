@@ -1,0 +1,19 @@
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:tsblog/typoscript/lib.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:tsblog/typoscript/lib.blogListView.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:tsblog/typoscript/lib.blogListViewConditions.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:tsblog/typoscript/lib.blogSingleView.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:tsblog/typoscript/lib.commentListView.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:tsblog/typoscript/lib.menuMonths.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:tsblog/typoscript/lib.menuCategories.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:tsblog/typoscript/lib.menuRandomPosts.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:tsblog/typoscript/lib.blogListView.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:tsblog/typoscript/lib.searchBox.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:tsblog/typoscript/lib.commentForm.ts">
+
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:tsblog/typoscript/page.blogPostTitle.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:tsblog/typoscript/page.rss.ts">
+
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:tsblog/typoscript/realurl.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:tsblog/typoscript/indexed_search.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:tsblog/typoscript/rss.ts">
+

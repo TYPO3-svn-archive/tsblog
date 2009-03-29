@@ -1,0 +1,90 @@
+body {
+	font-family: "Lucida Grande", Arial, Helvetica, Sans-Serif;
+	background-image: url(/typo3conf/ext/tsblog/res/pattern.gif);
+	margin: 0px;
+	padding: 0px;
+}
+ 
+a {
+	outline: none;
+	color: #000;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+p a {
+	text-decoration: underline;
+}
+
+.clearer {
+	clear: both;
+}
+.csc-firstHeader {	
+	margin-top: 0;
+}
+
+#body-container {
+	margin: 30px auto 40px;
+	width: 800px;
+}
+
+#header {
+	height: 188px;
+	background-image: url(/typo3conf/ext/tsblog/res/anewday_800.jpg);
+	vertical-align: bottom;
+	 -moz-border-radius-topleft: 20px; 
+	 -moz-border-radius-topright: 20px;
+	position: relative;
+}
+
+	#header a {
+		letter-spacing: -1px;
+		font-size: 3em;
+		color: white;
+		position: absolute;
+		bottom: 20px;
+		left: 20px;
+	}
+
+#content {
+	background: #F3F7FB url(/typo3conf/ext/tsblog/res/background.png) repeat-y; 
+	overflow: hidden;
+}
+
+#border-left {
+	float: left;
+	padding: 10px;
+	width: 180px;
+	clear: none;
+	display: inline;
+	z-index: 2;
+	font-size: 0.8em;
+}
+
+	#border-left h3 {
+		margin: 20px 0 5px 0;
+		border-bottom: 1px solid black;
+	}
+
+#border-normal {
+	width: auto;
+	padding: 10px 10px 10px 210px;
+	z-index: 1;
+}
+
+#footer {
+	height: 60px;
+	background-color: 054D83;
+	color: white;
+	padding: 30px 30px;
+	text-align: right;
+	clear: both;
+	-moz-border-radius-bottomleft: 20px; 
+	-moz-border-radius-bottomright: 20px;
+}
+#footer a {
+	color: white;
+}
