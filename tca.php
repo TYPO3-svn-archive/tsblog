@@ -8,7 +8,7 @@ $TCA['tx_tsblog_categories'] = array (
 	),
 	'feInterface' => $TCA['tx_tsblog_categories']['feInterface'],
 	'columns' => array (
-		'hidden' => array (		
+		'hidden' => array (
 			'exclude' => 1,
 			'label'   => 'LLL:EXT:lang/locallang_general.xml:LGL.hidden',
 			'config'  => array (
@@ -16,11 +16,11 @@ $TCA['tx_tsblog_categories'] = array (
 				'default' => '0'
 			)
 		),
-		'title' => array (		
-			'exclude' => 0,		
-			'label' => 'LLL:EXT:tsblog/locallang_db.xml:tx_tsblog_categories.title',		
+		'title' => array (
+			'exclude' => 0,
+			'label' => 'LLL:EXT:tsblog/locallang_db.xml:tx_tsblog_categories.title',
 			'config' => array (
-				'type' => 'input',	
+				'type' => 'input',
 				'size' => '30',
 			)
 		),
@@ -42,7 +42,7 @@ $TCA['tx_tsblog_posts'] = array (
 	),
 	'feInterface' => $TCA['tx_tsblog_posts']['feInterface'],
 	'columns' => array (
-		'hidden' => array (		
+		'hidden' => array (
 			'exclude' => 1,
 			'label'   => 'LLL:EXT:lang/locallang_general.xml:LGL.hidden',
 			'config'  => array (
@@ -50,31 +50,31 @@ $TCA['tx_tsblog_posts'] = array (
 				'default' => '0'
 			)
 		),
-		'title' => array (		
-			'exclude' => 0,		
-			'label' => 'LLL:EXT:tsblog/locallang_db.xml:tx_tsblog_posts.title',		
+		'title' => array (
+			'exclude' => 0,
+			'label' => 'LLL:EXT:tsblog/locallang_db.xml:tx_tsblog_posts.title',
 			'config' => array (
-				'type' => 'input',	
+				'type' => 'input',
 				'size' => '30',
 			)
 		),
-		'image' => array (		
-			'exclude' => 0,		
-			'label' => 'LLL:EXT:tsblog/locallang_db.xml:tx_tsblog_posts.image',		
+		'image' => array (
+			'exclude' => 0,
+			'label' => 'LLL:EXT:tsblog/locallang_db.xml:tx_tsblog_posts.image',
 			'config' => array (
 				'type' => 'group',
 				'internal_type' => 'file',
-				'allowed' => $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext'],	
-				'max_size' => $GLOBALS['TYPO3_CONF_VARS']['BE']['maxFileSize'],	
+				'allowed' => $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext'],
+				'max_size' => $GLOBALS['TYPO3_CONF_VARS']['BE']['maxFileSize'],
 				'uploadfolder' => 'uploads/tx_tsblog',
-				'size' => 1,	
+				'size' => 1,
 				'minitems' => 0,
 				'maxitems' => 1,
 			)
 		),
-		'body' => array (		
-			'exclude' => 0,		
-			'label' => 'LLL:EXT:tsblog/locallang_db.xml:tx_tsblog_posts.body',		
+		'body' => array (
+			'exclude' => 0,
+			'label' => 'LLL:EXT:tsblog/locallang_db.xml:tx_tsblog_posts.body',
 			'config' => array (
 				'type' => 'text',
 				'cols' => '30',
@@ -92,29 +92,29 @@ $TCA['tx_tsblog_posts'] = array (
 				),
 			)
 		),
-		'categories' => array (		
-			'exclude' => 0,		
-			'label' => 'LLL:EXT:tsblog/locallang_db.xml:tx_tsblog_posts.categories',		
+		'categories' => array (
+			'exclude' => 0,
+			'label' => 'LLL:EXT:tsblog/locallang_db.xml:tx_tsblog_posts.categories',
 			'config' => array (
-				'type' => 'select',	
-				'foreign_table' => 'tx_tsblog_categories',	
-				'foreign_table_where' => 'AND tx_tsblog_categories.pid=###CURRENT_PID### ORDER BY tx_tsblog_categories.uid',	
-				'size' => 5,	
+				'type' => 'select',
+				'foreign_table' => 'tx_tsblog_categories',
+				'foreign_table_where' => 'AND tx_tsblog_categories.pid=###CURRENT_PID### ORDER BY tx_tsblog_categories.uid',
+				'size' => 5,
 				'minitems' => 0,
 				'maxitems' => 100,
 			)
 		),
-		'postdate' => array (		
-			'exclude' => 0,		
-			'label' => 'LLL:EXT:tsblog/locallang_db.xml:tx_tsblog_posts.postdate',		
+		'postdate' => array (
+			'exclude' => 0,
+			'label' => 'LLL:EXT:tsblog/locallang_db.xml:tx_tsblog_posts.postdate',
 			'config' => array (
 				'type'     => 'input',
 				'size'     => '8',
 				'max'      => '20',
 				'eval'     => 'date',
 				'checkbox' => '0',
-				'default'  => '0'
-			)
+				'default'  => time(),
+			),
 		),
 	),
 	'types' => array (
