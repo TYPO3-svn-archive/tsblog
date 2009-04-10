@@ -1,15 +1,18 @@
 plugin.tx_tsblog {
- 
+
 	# cat=tsblog: Basic; type=string; label=List View Pid
 	listViewPid =
- 
+
 	# cat=tsblog: Basic; type=string; label=Single View Pid
-	singleViewPid = 
- 
+	singleViewPid =
+
 	# cat=tsblog: Basic; type=string; label=Storage Pid
-	storagePid = 
-	
+	storagePid =
+
 	# cat=tsblog: Basic; type=string; label=Search Pid
 	searchPid =
- 
+
+	# cat=tsblog: Basic; type=string; label=Base url
+	baseUrl =
+
 }
