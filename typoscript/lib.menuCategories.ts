@@ -29,6 +29,6 @@ lib.menuCategories {
 		}
 		wrap = <li>|</li>
 	}
-	
-	wrap = <ul class="category-menu">|</ul>
+
+	wrap = <ul id="category-menu">|</ul>
 }

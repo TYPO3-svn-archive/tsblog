@@ -1,3 +1,31 @@
+/*
+possible subcategories:
+----------------------
+enable      Used for options that enable or disable primary functions of a template
+dims        Dimensions of all kinds; pixels, widths, heights of images, frames, cells and so on.
+file        Files like background images, fonts and so on. Other options related to the file may also enter
+typo        Typography and related constants
+color       Color setup. Many colors will be found with related options in other categories though.
+links       Links: Targets typically
+language    Language specific options.
+Subcategories based on the default content elements:
+cheader,cheader_g,ctext,ctextpic,cimage,cbullets,ctable,cuploads,cmultimedia,cmailform,csearch,clogin,csplash,cmenu,cshortcut,clist,cscript,chtml
+These are all categories reserved for options that relate to content rendering for each type of tt_content element. See static_template "content (default)" and "styles.content (default)" for examples.
+
+possible data types (type=):
+---------------------------
+int [low-high]              integer, opt. in range "low" to "high"
+int+                        positive integer
+offset    [L1,L2,...L6]     comma-separated integers. Default is "x,y", but as comma separated parameters in brackets you can specify up to 6 labels being comma separated! If you wish to omit one of the last 4 fields, just don't enter a label for that element.
+color                       HTML color
+wrap                        HTML-code that is wrapped around some content.
+options [item1,item2,...]   Selectbox with values/labels item1, item2 etc. Commaseparated. Split by "=" also and in that case, first part is label, second is value
+boolean [truevalue]         Boolean, opt. you can define the value of "true", def.=1
+comment                     Boolean, checked= "", not-checked = "#".
+file [ext-list/IMAGE_EXT]   Selectorbox with resources. Opt. list allowed extensions (no space in list!), eg. "[ttf]" or "[txt,html,htm]". You can also enter "[IMAGE_EXT]" in which case the default image-extensions are listed. (used for datatype "imgResouce")
+string (the default)        Just a string value
+*/
+
 plugin.tx_tsblog {
 
 	# cat=tsblog: Basic; type=string; label=List View Pid
@@ -14,5 +42,14 @@ plugin.tx_tsblog {
 
 	# cat=tsblog: Basic; type=string; label=Base url
 	baseUrl =
+
+	# cat=tsblog: Basic; type=boolean; label=Crop posts in list view?
+	cropPostsInListView = 1
+
+	# cat=tsblog: Basic; type=string; label=Image width
+	imageWidth = 580c
+
+	# cat=tsblog: Basic; type=string; label=Image width
+	imageHeight = 300c
 
 }

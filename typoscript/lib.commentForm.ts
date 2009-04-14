@@ -11,4 +11,4 @@ lib.commentForm.10 {
 		requireApproval = 0
 	}
 }
-lib.commentForm.wrap = <!--TYPO3SEARCH_end--><div id="comment-form"><h2>Kommentar hinzufügen</h2>|</div><!--TYPO3SEARCH_begin-->
+lib.commentForm.wrap = <!--TYPO3SEARCH_end--><div id="comment-form"><h2>Kommentar hinzuf&uuml;gen</h2>|</div><!--TYPO3SEARCH_begin-->

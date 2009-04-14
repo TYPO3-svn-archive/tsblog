@@ -7,7 +7,7 @@ lib.blogSingleView {
 		intval = 1
 		wrap = <p class="error">No post found for uid "|"</p>
 	}
-	
+
 	override.cObject = RECORDS
 	override.cObject {
 		source.data = GPvar:tx_tsblog|post_uid
@@ -20,5 +20,5 @@ lib.blogSingleView {
 			40.postCObject >
 		}
 	}
-	
+
 }

@@ -11,7 +11,7 @@ lib.menuMonths {
 
 	renderObj = COA
 	renderObj {
-	
+
 		5 = TEXT
 		5 {
 			field = year
@@ -22,7 +22,7 @@ lib.menuMonths {
 			}
 			wrap = <li class="year">|</li>
 		}
-	
+
 		10 = COA
 		10 {
 			10 = TEXT
@@ -32,7 +32,7 @@ lib.menuMonths {
 					field = timeStampOfLastPostInMonth
 					date = F
 				}
-	
+
 				typolink {
 					parameter = {$plugin.tx_tsblog.listViewPid}
 					additionalParams.field = uid
@@ -47,11 +47,11 @@ lib.menuMonths {
 			}
 			wrap = <li class="month">|</li>
 		}
-		
+
 		20 = LOAD_REGISTER
 		20.lastUsedYear.cObject = TEXT
 		20.lastUsedYear.cObject.field = year
 	}
-	
-	wrap = <ul class="months-menu">|</ul>
+
+	wrap = <ul id="months-menu">|</ul>
 }

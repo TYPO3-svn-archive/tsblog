@@ -16,7 +16,7 @@ lib.blogListView {
 
 	renderObj = COA
 	renderObj {
-	
+
 		10 = IMAGE
 		10 {
 
@@ -25,18 +25,18 @@ lib.blogListView {
 				field = postdate
 				date = d.m.Y
 			}
-			
+
 			titleText < .altText
-			
+
 			file = GIFBUILDER
 			file {
 				XY = 68, 72
 				format = png
 				quality = 95
-					
+
 				10 = IMAGE
 				10.file = EXT:tsblog/res/calendar.png
-				
+
 				20 = TEXT
 				20 {
 					text.field = postdate
@@ -48,9 +48,9 @@ lib.blogListView {
 					iterations = 1
 					fontFile = t3lib/fonts/vera.ttf
 					fontColor = #000000
-					spacing = 1
+					# spacing = 1
 				}
-				
+
 				30 < .20
 				30 {
 					text.date = M 'y
@@ -61,12 +61,12 @@ lib.blogListView {
 					fontFile = t3lib/fonts/vera.ttf
 					fontColor = #FFFFFF
 				}
-				
+
 			}
 			wrap = <div class="web20date">|</div>
 		}
-		
-		
+
+
 		20 = TEXT
 		20 {
 			field = title
@@ -75,48 +75,34 @@ lib.blogListView {
 			editIcons.beforeLastTag = 1
 			wrap = <h2 class="posttitle">|</h2>
 		}
-		
+
 		30 = IMAGE
 		30 {
-			
+
 			file {
 				import = uploads/tx_tsblog/
 				import {
 					field = image
 					listNum = 0
 				}
-				width = 580c
-				height = 300c
+				width = {$plugin.tx_tsblog.imageWidth}
+				height = {$plugin.tx_tsblog.imageHeight}
 			}
 		}
-		
+
 		40 = TEXT
 		40 {
 			field = body
-			crop = 200 | ... | 1
 			parseFunc =< lib.parseFunc_RTE
-			
-			postCObject = TEXT
-			postCObject {
-				value = [mehr...]
-				typolink < lib.typolinkToSingleView
-				if {
-					value.field = body
-					value.crop = 200 | ... | 1
-					equals.field = body
-					negate = 1
-				}
-				wrap = <span class="more-link">|</span>
-			}
 		}
-		
+
 		50 = TEXT
 		50 {
 			field = categories
 			split {
 				token = ,
 				cObjNum = |*| 1 |*| 2
-				
+
 				1 {
 					10 = TEXT
 					10 {
@@ -139,13 +125,13 @@ lib.blogListView {
 					ifEmpty = (Keine Kategorien gefunden)
 				}
 				1.noTrimWrap = ||, |
-				
+
 				2 < .1
 				2.noTrimWrap >
 			}
 			wrap = <div class="category-info">&#187; Kategorien:&nbsp;|</div>
 		}
-		
+
 		60 = LOAD_REGISTER
 		60.currentPostUid.cObject = TEXT
 		60.currentPostUid.cObject.field = uid
@@ -163,28 +149,28 @@ lib.blogListView {
 				}
 				selectFields = count(*) as quantity
 			}
-			
-			
+
+
 			renderObj = TEXT
 			renderObj {
-			
+
 				cObject = CASE
 				cObject {
 					key.field = quantity
-					
+
 					default = TEXT
 					default {
 						field = quantity
 						wrap = |&nbsp;Kommentare
 					}
-					
+
 					1 < .default
 					1.wrap = |&nbsp;Kommentar
-					
+
 					0 = TEXT
 					0.value = Kein Kommentar
 				}
-				
+
 				typolink {
 					parameter = {$plugin.tx_tsblog.singleViewPid}#comment-list
 					additionalParams.data = register:currentPostUid
@@ -193,7 +179,27 @@ lib.blogListView {
 			}
 			wrap = <div class="comment-info">&#187;&nbsp;|</div>
 		}
-		
+
 		wrap = <div class="blogpost">|</div>
 	}
 }
+
+
+/*
+lib.blogListView.renderObj.40 {
+	crop = 200 | ... | 1
+
+	postCObject = TEXT
+	postCObject {
+		value = [mehr...]
+		typolink < lib.typolinkToSingleView
+		if {
+			value.field = body
+			value.crop = 200 | ... | 1
+			equals.field = body
+			negate = 1
+		}
+		wrap = <span class="more-link">|</span>
+	}
+}
+*/
