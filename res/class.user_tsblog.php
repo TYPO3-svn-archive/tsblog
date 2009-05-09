@@ -7,7 +7,7 @@ class user_tsblog {
 	 *
 	 * @param 	string 	content
 	 * @return	string	content
-	 * @author	Fabrizio Branca <branca@punkt.de>
+	 * @author	Fabrizio Branca <mail@fabrizio-branca.de>
 	 * @since	2009-03-01
 	 */
 	public function user_clearRecordRegister($content) {
@@ -20,7 +20,7 @@ class user_tsblog {
 	 *
 	 * @param 	string 	content
 	 * @return	string	md5 of content
-	 * @author	Fabrizio Branca <branca@punkt.de>
+	 * @author	Fabrizio Branca <mail@fabrizio-branca.de>
 	 * @since	2009-03-01
 	 */
 	public function user_md5($content) {
